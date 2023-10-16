@@ -1,3 +1,5 @@
+package Animal;
+
 public abstract class Animal {
 
 //    Propiedades
@@ -27,7 +29,7 @@ public abstract class Animal {
         this.Idade = idade;
     }
     public void setGenero(String Genero){
-        this.Genero = Genero.toUpperCase();
+        this.Genero = Genero.toLowerCase();
     }
 
 
@@ -52,6 +54,15 @@ public abstract class Animal {
     public abstract void comer();
     public abstract void Locomocao();
     public abstract void detalhes();
+
+//    Ferramentas
+
+    public void Caixa(){
+        for (int x = 0 ; x <= 40; x++){
+            System.out.print("-");
+        }
+        System.out.println(" ");
+    }
 
 
 
