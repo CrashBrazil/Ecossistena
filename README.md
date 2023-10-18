@@ -5,6 +5,10 @@ Este é um projeto que contém várias classes representando elementos da nature
 
 Observe que todas as classes têm um método `detalhes()`, que tem como função mostrar informações sobre o animal, exceto para a classe Fenômenos.
 
+## Criador
+
+- **Nome**: Matheus Venâncio da Silva
+- **Número de Matrícula**: 01628436
 ## Anfíbios
 
 ### Métodos
