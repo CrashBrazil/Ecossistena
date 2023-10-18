@@ -11,7 +11,7 @@ Observe que todas as classes têm um método `detalhes()`, que tem como função
 
 - `regenerar()`: Regenera uma parte do corpo do anfíbio.
 
-- `Comer(Tipo_de_Alimentacao)`: Permite ao anfíbio se alimentar do tipo de comida especificado.
+- `Comer()`: Permite ao anfíbio se alimentar do tipo de comida especificado.
 
 - `Locomoção()`: Simula a locomoção do anfíbio.
 
