@@ -45,6 +45,6 @@ Observe que todas as classes têm um método `detalhes()`, que tem como função
 
 - `meteoro()`: Representa a queda de um meteoro.
 
-- `incendio(Arvores x)`: Provoca um incêndio que pode matar uma árvore.
+- `incendio(Arvores x)`: Provoca um incêndio que mata uma árvore.
 
 Este projeto é uma representação simplificada da interação entre diferentes elementos da natureza e pode ser útil para fins educacionais e de aprendizado. Sinta-se à vontade para explorar as classes e seus métodos para entender melhor como esses elementos interagem.
