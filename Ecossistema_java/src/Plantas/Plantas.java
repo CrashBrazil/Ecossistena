@@ -59,7 +59,6 @@ public abstract class Plantas {
     }
     //    Metodos
 
-    public abstract void fotossintese();
     public abstract void Produzir_Alimento();
     public abstract void detalhes();
 

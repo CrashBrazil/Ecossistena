@@ -27,10 +27,6 @@ public class Arvores extends Plantas {
     }
 
 //    Metodos
-    @Override
-    public void fotossintese() {
-
-    }
 
     @Override
     public void Produzir_Alimento() {

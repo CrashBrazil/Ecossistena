@@ -6,6 +6,9 @@ public class Mamiferos extends Animal {
 //    Propiedades
     private int SeresBipedes;
     private double Forca;
+    private Mamiferos x;
+    private   Mamiferos y;
+
 
 //    CONSTRUTOR
 
@@ -35,6 +38,22 @@ public class Mamiferos extends Animal {
         return this.Forca;
     }
 
+    public void setX(Mamiferos x) {
+        this.x = x;
+    }
+
+    public void setY(Mamiferos y) {
+        this.y = y;
+    }
+
+    public Mamiferos getX() {
+        return x;
+    }
+
+    public Mamiferos getY() {
+        return y;
+    }
+
 //    Metodos
     @Override
     public void comer() {
@@ -62,5 +81,44 @@ public class Mamiferos extends Animal {
         System.out.printf("Genero: %s %n",getGenero());
         System.out.printf("Quantidades de patas: %d %n",getSeresBipedes());
         Caixa();
+    }
+    public void Luta_pela_sobrevivencia(Mamiferos x,Mamiferos y){
+        if (x.getForca() > y.getForca() && x.getVida_Morto() == true && y.getVida_Morto() == true ){
+            y.setVida_Morto(false);
+            Caixa();
+            System.out.printf("%s Matou e comeu %s %n",x.getNome(),y.getNome());
+            Caixa();
+        }
+        else if (x.getForca() < y.getForca() && x.getVida_Morto() == true && y.getVida_Morto() == true){
+            x.setVida_Morto(false);
+            Caixa();
+            System.out.printf("%s foi comido por %s %n",x.getNome(),y.getNome());
+            Caixa();
+        }
+        else if (x.getForca() == y.getForca() && x.getVida_Morto() == true && y.getVida_Morto() == true ){
+            Caixa();
+            System.out.printf("%s e %s tiveram um empate %n",x.getNome(),y.getNome());
+            Caixa();
+        }
+        else {
+
+            if (x.getVida_Morto() == false){
+                Caixa();
+                System.out.printf("Impossivel de fornecer batalha,%s está morto %n",x.getNome());
+                Caixa();
+
+            }
+            else if (y.getVida_Morto() == false){
+                Caixa();
+                System.out.printf("Impossivel de fornecer batalha,%s está morto %n",y.getNome());
+                Caixa();
+            }
+            else if (x.getVida_Morto() == false && y.getVida_Morto() == false){
+                Caixa();
+                System.out.print("Impossivel de fornecer batalha,%s e %s estão mortos %n");
+                Caixa();
+            }
+        }
+
     }
 }
