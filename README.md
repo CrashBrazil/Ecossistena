@@ -41,6 +41,8 @@ Observe que todas as classes têm um método `detalhes()`, que tem como função
 
 ## Fenômenos
 
+### Métodos
+
 - `meteoro()`: Representa a queda de um meteoro.
 
 - `incendio(Arvores x)`: Provoca um incêndio que pode matar uma árvore.
